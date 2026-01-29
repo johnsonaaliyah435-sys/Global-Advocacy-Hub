@@ -1,21 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fdf6f0;
-  color: #333;
-  text-align: center;
-  padding: 20px;
+// Pop-ups for different countries
+function showPopup(country) {
+  const popup = document.getElementById('popup');
+  const text = document.getElementById('popupText');
+  switch(country) {
+    case 'us':
+      text.innerHTML = "USA 🇺🇸: Bald Eagle 🦅 — Protect your rights, know your laws!";
+      break;
+    case 'india':
+      text.innerHTML = "India 🐅: Tiger 🐅 — Stay safe during activism and protests!";
+      break;
+    case 'china':
+      text.innerHTML = "China 🐼: Panda 🐼 — Spread awareness, be kind to mental health.";
+      break;
+    case 'australia':
+      text.innerHTML = "Australia 🦘: Kangaroo 🦘 — Connect, learn, and share safely!";
+      break;
+  }
+  popup.style.display = "block";
 }
 
-h1 {
-  color: #ff69b4;
+function closePopup() {
+  document.getElementById('popup').style.display = "none";
 }
 
-button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+// Color theme picker
+const colorPicker = document.getElementById('colorPicker');
+colorPicker.addEventListener('change', (e) => {
+  document.body.className = e.target.value;
+});
