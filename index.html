@@ -1,66 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Advocacy Hub</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Global Advocacy Hub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🌏 Global Advocacy Hub</h1>
-    <p>A safe, colorful space for activism, mental health, and community worldwide!</p>
-
-    <label for="colorPicker">Choose your theme:</label>
-    <select id="colorPicker">
-      <option value="default">Default</option>
-      <option value="pastel">Pastel</option>
-      <option value="hotpink">Hot Pink</option>
-      <option value="babyblue">Baby Blue</option>
-      <option value="yellow">Pastel Yellow</option>
-    </select>
-  </header>
-
-  <section>
-    <h2>🌸 Rights & Activism</h2>
-    <p>Learn about feminism, political rights, ICE awareness, and safe activism globally.</p>
-    <button onclick="showPopup('us')">USA 🇺🇸</button>
-    <button onclick="showPopup('india')">India 🐅</button>
-    <button onclick="showPopup('china')">China 🐼</button>
-    <button onclick="showPopup('australia')">Australia 🦘</button>
-  </section>
-
-  <section>
-    <h2>💖 Mental Health</h2>
-    <p>Tips and resources for adults, teens, and children — male & female.</p>
-    <ul>
-      <li>Adults: Coping techniques, helplines</li>
-      <li>Teens: School & social support tips</li>
-      <li>Children: Guidance for parents/caregivers</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>💬 Community Board</h2>
-    <p>Click posts to view details! (Static demo for now)</p>
-    <div class="post">
-      <h3>Women’s Rights</h3>
-      <p>How to organize a safe protest in your city.</p>
+    <div class="header">
+        <h1>🌟 Global Advocacy Hub 🌟</h1>
     </div>
-    <div class="post">
-      <h3>Mental Health</h3>
-      <p>Tips for teens feeling overwhelmed at school.</p>
-    </div>
-    <div class="post">
-      <h3>Political Rights</h3>
-      <p>Know your rights as a protester in your country.</p>
-    </div>
-  </section>
 
-  <div id="popup" class="popup">
-    <span id="popupText"></span>
-    <button onclick="closePopup()">Close</button>
-  </div>
+    <div class="chibis-container">
+        <img src="chibis/lumi.png" alt="Lumi" class="chibi">
+        <img src="chibis/miso.png" alt="Miso" class="chibi">
+        <img src="chibis/pip.png" alt="Pip" class="chibi">
+        <img src="chibis/tiko.png" alt="Tiko" class="chibi">
+        <img src="chibis/nori.png" alt="Nori" class="chibi">
+    </div>
+
+    <div class="color-picker-container">
+        <label for="colorPicker">Pick a color:</label>
+        <input type="color" id="colorPicker" value="#ffcc00">
+    </div>
+
+    <div class="chat-container">
+        <input type="text" id="chatInput" placeholder="Type something...">
+        <button id="sendBtn">Send</button>
+        <div id="chatLog"></div>
+    </div>
+
+    <div class="mini-story-container">
+        <button class="storyBtn" data-story="Story 1: The chibis went on an adventure!">Mini Story 1</button>
+        <button class="storyBtn" data-story="Story 2: Lumi found a magical crystal.">Mini Story 2</button>
+        <div id="storyOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
