@@ -1,41 +1,43 @@
 /* Global body settings */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #FFEBB7, #FEE2E2); /* warm, soft yellow to light pink */
-    color: #1A1A1A;
+    background: linear-gradient(to bottom, #FFF9C4, #FFEBEE); /* pastel yellow → soft pink */
+    color: #333333;
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 header {
-    background-color: #003366; /* dark blue USA color */
+    background-color: #F8BBD0; /* pastel pink */
     color: #FFFFFF;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+    border-bottom: 4px solid #FFEB3B; /* pastel yellow accent */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Main sections */
 section {
     padding: 20px;
-    margin: 10px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.85);
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    margin: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
 }
 
 /* Headings */
 h1, h2, h3 {
-    color: #990000; /* deep red, Native/USA inspired */
+    color: #F48FB1; /* soft pink pastel */
 }
 
 /* Buttons */
 button {
-    background-color: #FFD700; /* golden accent */
-    color: #003366;
+    background-color: #FFECB3; /* pastel yellow */
+    color: #F06292; /* pastel pink text */
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 12px 25px;
+    border-radius: 12px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s;
@@ -43,12 +45,12 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    background-color: #FFB800;
+    background-color: #FFF176; /* slightly brighter yellow */
 }
 
 /* Links */
 a {
-    color: #003366;
+    color: #F06292;
     text-decoration: none;
     font-weight: bold;
 }
@@ -63,7 +65,7 @@ input[type="text"], textarea {
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #ccc;
 }
 
@@ -71,7 +73,8 @@ input[type="text"], textarea {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #003366;
-    color: #fff;
+    background-color: #F8BBD0; /* pastel pink */
+    color: #FFFFFF;
     margin-top: 20px;
+    border-top: 4px solid #FFEB3B; /* pastel yellow accent */
 }
